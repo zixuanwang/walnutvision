@@ -1,0 +1,48 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        核桃
+    description:  核桃
+    keywords:     shishang, fashion, mobile, iphone, android, location, 时尚
+    language:     utf-8
+    robots:       index, follow
+
+  stylesheets:    []
+
+  javascripts:    [jquery.js, bootstrap-transition.js, bootstrap-alert.js, bootstrap-modal.js, bootstrap-dropdown.js, bootstrap-scrollspy.js, bootstrap-tab.js, bootstrap-tooltip.js, bootstrap-popover.js, bootstrap-button.js, bootstrap-collapse.js, bootstrap-carousel.js, bootstrap-typeahead.js]
+
+  has_layout:     true
+  layout:         layout
+homeSuccess:
+  stylesheets:    [preformat.css, style2.css]
+aboutSuccess:
+  stylesheets:    [preformat.css, style2.css]
+joinSuccess:
+  stylesheets:    [preformat.css, style2.css]
+categorySuccess:
+  has_layout:  false
+clientLoginAuthenticateSuccess:
+  has_layout:  false
+colorSuccess:
+  has_layout:  false
+materialSuccess:
+  has_layout:  false
+indexSuccess:
+  stylesheets:    [bootstrap.css, bootstrap-responsive.css]
+  javascripts:    []
+registerSuccess:
+  stylesheets:    [bootstrap.css]
+  javascripts:    []
+uploadSuccess:
+  has_layout:  false
+wallSuccess:
+  stylesheets:    [bootstrap.css]
+  javascripts:    []  
+querySuccess:
+  stylesheets:    [bootstrap.css]
+  javascripts:    []

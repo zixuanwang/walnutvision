@@ -1,0 +1,509 @@
+options:
+  collate: utf8_unicode_ci
+  charset: utf8
+
+User:
+  actAs: [Timestampable]
+  columns:
+    username:
+      type: string(16)
+    password:
+      type: string(32)
+    usertype:
+      type: string
+    realname:
+      type: string(8)
+    sex:
+      type: string
+    age:
+      type: integer
+    headurl:
+      type: string
+    lastlogin:
+      type: timestamp
+  indexes:
+    username_index:
+      fields: username
+    password_index:
+      fields: password
+    realname_index:
+      fields: realname
+  relations:
+    ProductUpload:
+      class: Product
+      refClass: UserProductUploadLink
+      local: user_id
+      foreign: product_id
+      foreignAlias: UploadUsers
+    ProductRecommendation:
+      class: Product
+      refClass: UserProductRecommendationLink
+      local: user_id
+      foreign: product_id
+      foreignAlias: RecommendationUsers
+
+RenRenUser:
+  columns:
+    name:
+      type: string
+      notnull: true
+    sex:
+      type: string
+    networkname:
+      type: string
+    friendscount:
+      type: integer
+    birthyear:
+      type: integer
+    birthmonth:
+      type: integer
+    birthday:
+      type: integer
+    headurl:
+      type: string
+    hometownprovince:
+      type: string
+    hometowncity:
+      type: string
+    user_id:
+      type: integer
+      notnull: true
+  relations:
+    User:
+      onDelete: CASCADE
+      local: user_id
+      foreign: id
+      foreignAlias: RenRenUser
+
+QQUser:
+  columns:
+    name:
+      type: string
+      notnull: true
+    user_id:
+      type: integer
+      notnull: true
+  relations:
+    User:
+      onDelete: CASCADE
+      local: user_id
+      foreign: id
+      foreignAlias: QQUser 
+
+Store:
+  columns:
+    name:
+      type: string
+      notnull: true
+    longitude:
+      type: float
+    latitude:
+      type: float
+    address:
+      type: string
+    rating:
+      type: float
+    operatetime:
+      type: string
+    contactphone:
+      type: string
+    contactemail:
+      type: string
+    contactwebsite:
+      type: string
+    parking:
+      type: integer
+
+Sale:
+  columns:
+    product_id:
+      type: integer
+      notnull: true
+    store_id:
+      type: integer
+      notnull: true
+    salediscount:
+      type: float
+      notnull: true
+    salestarttime:
+      type: timestamp
+      notnull: true
+    saleendtime:
+      type: timestamp
+      notnull: true
+    salecoupon:
+      type: string
+  relations:
+    Product:
+      onDelete: CASCADE
+      local: product_id
+      foreign: id
+      foreignAlias: Sales
+    Store:
+      onDelete: CASCADE
+      local: store_id
+      foreign: id 
+      foreignAlias: Sales
+
+ProductSimilarity:
+  columns:
+    id1:
+      type: integer
+      notnull: true
+    id2:
+      type: integer
+      notnull: true
+    similarity:
+      type: float
+      notnull: true
+  relations:
+    Product1:
+      onDelete: CASCADE
+      class: Product
+      local: id1
+      foreign: id
+    Product2:
+      onDelete: CASCADE
+      class: Product
+      local: id2
+      foreign: id 
+
+Product:
+  actAs: [Timestampable]
+  columns:
+    name:
+      type: string
+      notnull: true
+    brand_id:
+      type: integer
+    size:
+      type: string
+    barcode:
+      type: string
+    qrcode:
+      type: string
+    description:
+      type: clob 
+    overallrating:
+      type: float
+  relations:
+    Brand:
+      onDelete: CASCADE
+      local: brand_id
+      foreign: id
+      foreignAlias: Products
+    Color:
+      class: Color
+      refClass: ProductColorLink
+      local: product_id
+      foreign: color_id
+      foreignAlias: Products
+    Material:
+      class: Material
+      refClass: ProductMaterialLink
+      local: product_id
+      foreign: material_id
+      foreignAlias: Products
+    Category:
+      class: Category
+      refClass: ProductCategoryLink
+      local: product_id
+      foreign: category_id
+      foreignAlias: Products
+    UserRecommendation:
+      class: User
+      refClass: UserProductRecommendationLink
+      local: product_id 
+      foreign: user_id
+      foreignAlias: RecommendationProducts
+    UserUpload:
+      class: User
+      refClass: UserProductUploadLink
+      local: product_id 
+      foreign: user_id
+      foreignAlias: UploadProducts
+
+UserProductUploadLink:
+  columns:
+    user_id:
+      type: integer
+      notnull: true
+    product_id:
+      type: integer
+      notnull: true
+  relations:
+    User:
+      onDelete: CASCADE
+      local: user_id
+      foreign: id
+    Product:
+      onDelete: CASCADE
+      local: product_id
+      foreign: id
+    
+Image:
+  columns:
+    product_id:
+      type: integer
+      notnull: true
+    url:
+      type: string
+      notnull: true
+    description:
+      type: clob
+  relations:
+    Product:
+      onDelete: CASCADE
+      local: product_id
+      foreign: id
+      foreignAlias: Images
+
+Price:
+  columns:
+    product_id:
+      type: integer
+      notnull: true
+    store_id:
+      type: integer
+      notnull: true
+    price:
+      type: float
+  relations:
+    Product:
+      onDelete: CASCADE
+      local: product_id
+      foreign: id
+    Store:
+      onDelete: CASCADE
+      local: store_id
+      foreign: id
+  indexes:
+    price_index:
+      fields: price
+
+ProductColorLink:
+  columns:
+    product_id:
+      type: integer
+      notnull: true
+    color_id:
+      type: integer
+      notnull: true
+  relations:
+    Product:
+      onDelete: CASCADE
+      local: product_id
+      foreign: id
+    Color:
+      onDelete: CASCADE
+      local: color_id
+      foreign: id
+
+Color:
+  columns:
+    colorname:
+      type: string
+      notnull: true
+  relations:
+    Product:
+      class: Product
+      refClass: ProductColorLink
+      local: color_id
+      foreign: product_id
+      foreignAlias: Colors
+      
+ProductMaterialLink:
+  columns:
+    product_id:
+      type: integer
+      notnull: true
+    material_id:
+      type: integer
+      notnull: true
+  relations:
+    Product:
+      onDelete: CASCADE
+      local: product_id
+      foreign: id
+    Material:
+      onDelete: CASCADE
+      local: material_id
+      foreign: id
+
+Material:
+  columns:
+    materialname:
+      type: string
+      notnull: true
+  relations:
+    Product:
+      class: Product
+      refClass: ProductMaterialLink
+      local: material_id
+      foreign: product_id
+      foreignAlias: Materials
+      
+ProductCategoryLink:
+  columns:
+    product_id:
+      type: integer
+      notnull: true
+    category_id:
+      type: integer
+      notnull: true
+  relations:
+    Product:
+      local: product_id
+      foreign: id
+      onDelete: CASCADE
+    Category:
+      local: category_id
+      foreign: id
+      onDelete: CASCADE
+
+Category:
+  columns:
+    level:
+      type: integer
+      notnull: true
+    description:
+      type: string
+      notnull: true
+  indexes:
+    level_index:
+      fields: level
+  relations:
+    Product:
+      class: Product
+      refClass: ProductCategoryLink
+      local: category_id
+      foreign: product_id
+      foreignAlias: Categories
+    Category:
+      class: Category
+      refClass: CategoryTree
+      local: subcategory_id
+      foreign: category_id
+      foreignAlias: Subcategories
+
+CategoryTree:
+  columns:
+    category_id:
+      type: integer
+      notnull: true
+    subcategory_id:
+      type: integer
+      notnull: true
+  relations:
+    Category:
+      onDelete: CASCADE
+      class: Category
+      local: category_id
+      foreign: id
+    Subcategory:
+      onDelete: CASCADE
+      class: Category
+      local: subcategory_id
+      foreign: id
+
+Brand:
+  columns:
+    country:
+      type: string
+    description:
+      type: clob
+      notnull: true
+
+Comment:
+  actAs: [Timestampable]
+  columns:
+    user_id:
+      type: integer
+      notnull: true
+    product_id:
+      type: integer
+      notnull: true
+    rating:
+      type: integer
+    love:
+      type: integer
+    content:
+      type: clob 
+  relations:
+    User:
+      foreignAlias: Comments
+      local: user_id
+      foreign: id
+      onDelete: CASCADE
+    Product:
+      foreignAlias: Comments
+      local: product_id
+      foreign: id
+      onDelete: CASCADE
+
+Friendship:
+  columns:
+    id1:
+      type: integer
+      primary: true
+      notnull: true
+    id2:
+      type: integer
+      primary: true
+      notnull: true
+    hop:
+      type: integer
+      notnull: true
+  relations:
+    User1:
+      onDelete: CASCADE
+      class: User
+      local: id1
+      foreign: id
+    User2:
+      onDelete: CASCADE
+      class: User
+      local: id2
+      foreign: id
+
+FriendSimilarity:
+  columns:
+    id1:
+      type: integer
+      primary: true
+      notnull: true
+    id2:
+      type: integer
+      primary: true
+      notnull: true
+    similarity:
+      type: float
+  relations:
+    User1:
+      onDelete: CASCADE
+      class: User
+      local: id1
+      foreign: id
+    User2:
+      onDelete: CASCADE
+      class: User
+      local: id2
+      foreign: id
+
+UserProductRecommendationLink:
+  columns:
+    user_id:
+      type: integer
+      notnull: true
+    product_id:
+      type: integer
+      notnull: true
+  relations:
+    User:
+      onDelete: CASCADE
+      local: user_id
+      foreign: id
+    Product:
+      onDelete: CASCADE
+      local: product_id
+      foreign: id

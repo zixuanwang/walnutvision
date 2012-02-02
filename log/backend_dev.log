@@ -1,0 +1,719 @@
+Nov 05 23:15:58 symfony [info] {sfPatternRouting} Match route "category" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'index',  'sf_format' => 'html',)
+Nov 05 23:15:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:15:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:15:58 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Nov 05 23:15:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:15:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM category c - ()
+Nov 05 23:15:58 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/indexSuccess.php"
+Nov 05 23:15:58 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Nov 05 23:15:58 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Nov 05 23:15:58 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list_header.php"
+Nov 05 23:15:58 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_filters.php"
+Nov 05 23:15:58 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_filters_field.php"
+Nov 05 23:15:58 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_filters_field.php"
+Nov 05 23:15:58 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_filters_field.php"
+Nov 05 23:15:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.brand_id AS p__brand_id, p.color_id AS p__color_id, p.size AS p__size, p.barcode AS p__barcode, p.qrcode AS p__qrcode, p.description AS p__description, p.overallrating AS p__overallrating, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Nov 05 23:15:58 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list.php"
+Nov 05 23:15:58 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list_batch_actions.php"
+Nov 05 23:15:58 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list_actions.php"
+Nov 05 23:15:58 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list_footer.php"
+Nov 05 23:15:58 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:15:58 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:15:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:15:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} Configuration 110.85 ms (12)
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} Factories 91.26 ms (1)
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} Action "category/index" 23.89 ms (1)
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 55.24 ms (1)
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 0.61 ms (1)
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 0.58 ms (1)
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} Partial "category/_list_header" 12.09 ms (1)
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} Partial "category/_filters" 25.25 ms (1)
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} Partial "category/_filters_field" 9.70 ms (3)
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} Partial "category/_list" 0.69 ms (1)
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} Partial "category/_list_batch_actions" 0.87 ms (1)
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} Partial "category/_list_actions" 0.63 ms (1)
+Nov 05 23:15:58 symfony [info] {sfWebDebugLogger} Partial "category/_list_footer" 0.54 ms (1)
+Nov 05 23:15:58 symfony [info] {sfWebResponse} Send content (57844 o)
+Nov 05 23:17:35 symfony [info] {sfPatternRouting} Match route "category" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'index',  'sf_format' => 'html',)
+Nov 05 23:17:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:17:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:17:35 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Nov 05 23:17:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:17:35 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM category c - ()
+Nov 05 23:17:35 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/indexSuccess.php"
+Nov 05 23:17:35 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Nov 05 23:17:35 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Nov 05 23:17:35 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list_header.php"
+Nov 05 23:17:35 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_filters.php"
+Nov 05 23:17:35 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_filters_field.php"
+Nov 05 23:17:35 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_filters_field.php"
+Nov 05 23:17:35 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_filters_field.php"
+Nov 05 23:17:35 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.brand_id AS p__brand_id, p.color_id AS p__color_id, p.size AS p__size, p.barcode AS p__barcode, p.qrcode AS p__qrcode, p.description AS p__description, p.overallrating AS p__overallrating, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Nov 05 23:17:35 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list.php"
+Nov 05 23:17:35 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list_batch_actions.php"
+Nov 05 23:17:35 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list_actions.php"
+Nov 05 23:17:35 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list_footer.php"
+Nov 05 23:17:35 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:17:35 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:17:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:17:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} Configuration 2.40 ms (11)
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} Factories 38.30 ms (1)
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} Action "category/index" 55.64 ms (1)
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 57.52 ms (1)
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 0.64 ms (1)
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 0.53 ms (1)
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} Partial "category/_list_header" 0.44 ms (1)
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} Partial "category/_filters" 36.24 ms (1)
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} Partial "category/_filters_field" 27.43 ms (3)
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} Partial "category/_list" 2.03 ms (1)
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} Partial "category/_list_batch_actions" 1.40 ms (1)
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} Partial "category/_list_actions" 0.77 ms (1)
+Nov 05 23:17:35 symfony [info] {sfWebDebugLogger} Partial "category/_list_footer" 0.46 ms (1)
+Nov 05 23:17:35 symfony [info] {sfWebResponse} Send content (57888 o)
+Nov 05 23:17:48 symfony [info] {sfPatternRouting} Match route "category" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'index',  'sf_format' => 'html',)
+Nov 05 23:17:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:17:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:17:48 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Nov 05 23:17:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:17:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM category c - ()
+Nov 05 23:17:48 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/indexSuccess.php"
+Nov 05 23:17:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Nov 05 23:17:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Nov 05 23:17:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list_header.php"
+Nov 05 23:17:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_filters.php"
+Nov 05 23:17:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_filters_field.php"
+Nov 05 23:17:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_filters_field.php"
+Nov 05 23:17:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_filters_field.php"
+Nov 05 23:17:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.brand_id AS p__brand_id, p.color_id AS p__color_id, p.size AS p__size, p.barcode AS p__barcode, p.qrcode AS p__qrcode, p.description AS p__description, p.overallrating AS p__overallrating, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Nov 05 23:17:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list.php"
+Nov 05 23:17:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list_batch_actions.php"
+Nov 05 23:17:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list_actions.php"
+Nov 05 23:17:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_list_footer.php"
+Nov 05 23:17:48 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:17:48 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:17:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:17:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} Configuration 1.42 ms (11)
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} Factories 25.63 ms (1)
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} Action "category/index" 28.89 ms (1)
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 30.37 ms (1)
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 0.46 ms (1)
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 0.39 ms (1)
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} Partial "category/_list_header" 0.38 ms (1)
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} Partial "category/_filters" 16.96 ms (1)
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} Partial "category/_filters_field" 12.27 ms (3)
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} Partial "category/_list" 0.59 ms (1)
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} Partial "category/_list_batch_actions" 0.78 ms (1)
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} Partial "category/_list_actions" 0.50 ms (1)
+Nov 05 23:17:48 symfony [info] {sfWebDebugLogger} Partial "category/_list_footer" 0.33 ms (1)
+Nov 05 23:17:48 symfony [info] {sfWebResponse} Send content (57855 o)
+Nov 05 23:18:01 symfony [info] {sfPatternRouting} Match route "category_new" (/category/new.:sf_format) for /category/new with parameters array (  'module' => 'category',  'action' => 'new',  'sf_format' => 'html',)
+Nov 05 23:18:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:18:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:18:01 symfony [info] {categoryActions} Call "categoryActions->executeNew()"
+Nov 05 23:18:01 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/newSuccess.php"
+Nov 05 23:18:01 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Nov 05 23:18:01 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Nov 05 23:18:01 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_header.php"
+Nov 05 23:18:01 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form.php"
+Nov 05 23:18:01 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_fieldset.php"
+Nov 05 23:18:01 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:18:01 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:18:01 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:18:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:18:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.brand_id AS p__brand_id, p.color_id AS p__color_id, p.size AS p__size, p.barcode AS p__barcode, p.qrcode AS p__qrcode, p.description AS p__description, p.overallrating AS p__overallrating, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Nov 05 23:18:01 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_actions.php"
+Nov 05 23:18:01 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_footer.php"
+Nov 05 23:18:01 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:18:01 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:18:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:18:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:18:01 symfony [info] {sfWebDebugLogger} Configuration 1.41 ms (11)
+Nov 05 23:18:01 symfony [info] {sfWebDebugLogger} Factories 22.30 ms (1)
+Nov 05 23:18:01 symfony [info] {sfWebDebugLogger} Action "category/new" 23.14 ms (1)
+Nov 05 23:18:01 symfony [info] {sfWebDebugLogger} View "Success" for "category/new" 31.22 ms (1)
+Nov 05 23:18:01 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 0.41 ms (1)
+Nov 05 23:18:01 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 0.39 ms (1)
+Nov 05 23:18:01 symfony [info] {sfWebDebugLogger} Partial "category/_form_header" 0.40 ms (1)
+Nov 05 23:18:01 symfony [info] {sfWebDebugLogger} Partial "category/_form" 21.11 ms (1)
+Nov 05 23:18:01 symfony [info] {sfWebDebugLogger} Partial "category/_form_fieldset" 16.74 ms (1)
+Nov 05 23:18:01 symfony [info] {sfWebDebugLogger} Partial "category/_form_field" 14.96 ms (3)
+Nov 05 23:18:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Nov 05 23:18:01 symfony [info] {sfWebDebugLogger} Partial "category/_form_actions" 1.00 ms (1)
+Nov 05 23:18:01 symfony [info] {sfWebDebugLogger} Partial "category/_form_footer" 0.47 ms (1)
+Nov 05 23:18:01 symfony [info] {sfWebResponse} Send content (61696 o)
+Nov 05 23:24:02 symfony [info] {sfPatternRouting} Match route "category_create" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'create',  'sf_format' => 'html',)
+Nov 05 23:24:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:24:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:24:02 symfony [info] {categoryActions} Call "categoryActions->executeCreate()"
+Nov 05 23:24:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:24:02 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO category (level, description) VALUES (?, ?) - (0, 女装)
+Nov 05 23:24:02 symfony [info] {sfFrontWebController} Redirect to "http://zixuanpc.stanford.edu/backend_dev.php/category/new"
+Nov 05 23:24:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 05 23:24:02 symfony [info] {sfWebResponse} Send header "Location: http://zixuanpc.stanford.edu/backend_dev.php/category/new"
+Nov 05 23:24:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:24:02 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (10)
+Nov 05 23:24:02 symfony [info] {sfWebDebugLogger} Factories 26.98 ms (1)
+Nov 05 23:24:02 symfony [info] {sfWebDebugLogger} Action "category/create" 47.83 ms (1)
+Nov 05 23:24:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Nov 05 23:24:02 symfony [info] {sfWebResponse} Send content (128 o)
+Nov 05 23:24:03 symfony [info] {sfPatternRouting} Match route "category_new" (/category/new.:sf_format) for /category/new with parameters array (  'module' => 'category',  'action' => 'new',  'sf_format' => 'html',)
+Nov 05 23:24:03 symfony [info] {myUser} Flag old flash messages ("notice")
+Nov 05 23:24:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:24:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:24:03 symfony [info] {categoryActions} Call "categoryActions->executeNew()"
+Nov 05 23:24:03 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/newSuccess.php"
+Nov 05 23:24:03 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Nov 05 23:24:03 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Nov 05 23:24:03 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_header.php"
+Nov 05 23:24:03 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form.php"
+Nov 05 23:24:03 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_fieldset.php"
+Nov 05 23:24:03 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:24:03 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:24:03 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:24:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:24:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.brand_id AS p__brand_id, p.color_id AS p__color_id, p.size AS p__size, p.barcode AS p__barcode, p.qrcode AS p__qrcode, p.description AS p__description, p.overallrating AS p__overallrating, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Nov 05 23:24:03 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_actions.php"
+Nov 05 23:24:03 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_footer.php"
+Nov 05 23:24:03 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:24:03 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:24:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:24:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:24:03 symfony [info] {sfWebDebugLogger} Configuration 1.57 ms (11)
+Nov 05 23:24:03 symfony [info] {sfWebDebugLogger} Factories 26.58 ms (1)
+Nov 05 23:24:03 symfony [info] {sfWebDebugLogger} Action "category/new" 23.56 ms (1)
+Nov 05 23:24:03 symfony [info] {sfWebDebugLogger} View "Success" for "category/new" 33.11 ms (1)
+Nov 05 23:24:03 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 0.45 ms (1)
+Nov 05 23:24:03 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 0.48 ms (1)
+Nov 05 23:24:03 symfony [info] {sfWebDebugLogger} Partial "category/_form_header" 0.45 ms (1)
+Nov 05 23:24:03 symfony [info] {sfWebDebugLogger} Partial "category/_form" 21.75 ms (1)
+Nov 05 23:24:03 symfony [info] {sfWebDebugLogger} Partial "category/_form_fieldset" 17.63 ms (1)
+Nov 05 23:24:03 symfony [info] {sfWebDebugLogger} Partial "category/_form_field" 15.87 ms (3)
+Nov 05 23:24:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Nov 05 23:24:03 symfony [info] {sfWebDebugLogger} Partial "category/_form_actions" 0.81 ms (1)
+Nov 05 23:24:03 symfony [info] {sfWebDebugLogger} Partial "category/_form_footer" 0.40 ms (1)
+Nov 05 23:24:03 symfony [info] {sfWebResponse} Send content (62558 o)
+Nov 05 23:24:03 symfony [info] {myUser} Remove old flash messages ("notice")
+Nov 05 23:24:18 symfony [info] {sfPatternRouting} Match route "category_create" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'create',  'sf_format' => 'html',)
+Nov 05 23:24:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:24:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:24:18 symfony [info] {categoryActions} Call "categoryActions->executeCreate()"
+Nov 05 23:24:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:24:18 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO category (level, description) VALUES (?, ?) - (0, 男装)
+Nov 05 23:24:18 symfony [info] {sfFrontWebController} Redirect to "http://zixuanpc.stanford.edu/backend_dev.php/category/new"
+Nov 05 23:24:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 05 23:24:18 symfony [info] {sfWebResponse} Send header "Location: http://zixuanpc.stanford.edu/backend_dev.php/category/new"
+Nov 05 23:24:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:24:18 symfony [info] {sfWebDebugLogger} Configuration 1.40 ms (10)
+Nov 05 23:24:18 symfony [info] {sfWebDebugLogger} Factories 26.72 ms (1)
+Nov 05 23:24:18 symfony [info] {sfWebDebugLogger} Action "category/create" 52.38 ms (1)
+Nov 05 23:24:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Nov 05 23:24:18 symfony [info] {sfWebResponse} Send content (128 o)
+Nov 05 23:24:18 symfony [info] {sfPatternRouting} Match route "category_new" (/category/new.:sf_format) for /category/new with parameters array (  'module' => 'category',  'action' => 'new',  'sf_format' => 'html',)
+Nov 05 23:24:18 symfony [info] {myUser} Flag old flash messages ("notice")
+Nov 05 23:24:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:24:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:24:18 symfony [info] {categoryActions} Call "categoryActions->executeNew()"
+Nov 05 23:24:18 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/newSuccess.php"
+Nov 05 23:24:18 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Nov 05 23:24:18 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Nov 05 23:24:18 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_header.php"
+Nov 05 23:24:18 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form.php"
+Nov 05 23:24:18 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_fieldset.php"
+Nov 05 23:24:18 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:24:18 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:24:19 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:24:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:24:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.brand_id AS p__brand_id, p.color_id AS p__color_id, p.size AS p__size, p.barcode AS p__barcode, p.qrcode AS p__qrcode, p.description AS p__description, p.overallrating AS p__overallrating, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Nov 05 23:24:19 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_actions.php"
+Nov 05 23:24:19 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_footer.php"
+Nov 05 23:24:19 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:24:19 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:24:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:24:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:24:19 symfony [info] {sfWebDebugLogger} Configuration 1.46 ms (11)
+Nov 05 23:24:19 symfony [info] {sfWebDebugLogger} Factories 22.74 ms (1)
+Nov 05 23:24:19 symfony [info] {sfWebDebugLogger} Action "category/new" 22.92 ms (1)
+Nov 05 23:24:19 symfony [info] {sfWebDebugLogger} View "Success" for "category/new" 34.97 ms (1)
+Nov 05 23:24:19 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 0.45 ms (1)
+Nov 05 23:24:19 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 0.43 ms (1)
+Nov 05 23:24:19 symfony [info] {sfWebDebugLogger} Partial "category/_form_header" 0.41 ms (1)
+Nov 05 23:24:19 symfony [info] {sfWebDebugLogger} Partial "category/_form" 23.36 ms (1)
+Nov 05 23:24:19 symfony [info] {sfWebDebugLogger} Partial "category/_form_fieldset" 18.86 ms (1)
+Nov 05 23:24:19 symfony [info] {sfWebDebugLogger} Partial "category/_form_field" 17.06 ms (3)
+Nov 05 23:24:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Nov 05 23:24:19 symfony [info] {sfWebDebugLogger} Partial "category/_form_actions" 0.86 ms (1)
+Nov 05 23:24:19 symfony [info] {sfWebDebugLogger} Partial "category/_form_footer" 0.39 ms (1)
+Nov 05 23:24:19 symfony [info] {sfWebResponse} Send content (62598 o)
+Nov 05 23:24:19 symfony [info] {myUser} Remove old flash messages ("notice")
+Nov 05 23:24:43 symfony [info] {sfPatternRouting} Match route "category_create" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'create',  'sf_format' => 'html',)
+Nov 05 23:24:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:24:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:24:43 symfony [info] {categoryActions} Call "categoryActions->executeCreate()"
+Nov 05 23:24:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:24:43 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO category (level, description) VALUES (?, ?) - (0, 鞋子)
+Nov 05 23:24:43 symfony [info] {sfFrontWebController} Redirect to "http://zixuanpc.stanford.edu/backend_dev.php/category/new"
+Nov 05 23:24:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 05 23:24:43 symfony [info] {sfWebResponse} Send header "Location: http://zixuanpc.stanford.edu/backend_dev.php/category/new"
+Nov 05 23:24:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Configuration 1.38 ms (10)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Factories 26.88 ms (1)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Action "category/create" 53.10 ms (1)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Nov 05 23:24:43 symfony [info] {sfWebResponse} Send content (128 o)
+Nov 05 23:24:43 symfony [info] {sfPatternRouting} Match route "category_new" (/category/new.:sf_format) for /category/new with parameters array (  'module' => 'category',  'action' => 'new',  'sf_format' => 'html',)
+Nov 05 23:24:43 symfony [info] {myUser} Flag old flash messages ("notice")
+Nov 05 23:24:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:24:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:24:43 symfony [info] {categoryActions} Call "categoryActions->executeNew()"
+Nov 05 23:24:43 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/newSuccess.php"
+Nov 05 23:24:43 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Nov 05 23:24:43 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Nov 05 23:24:43 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_header.php"
+Nov 05 23:24:43 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form.php"
+Nov 05 23:24:43 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_fieldset.php"
+Nov 05 23:24:43 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:24:43 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:24:43 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:24:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:24:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.brand_id AS p__brand_id, p.color_id AS p__color_id, p.size AS p__size, p.barcode AS p__barcode, p.qrcode AS p__qrcode, p.description AS p__description, p.overallrating AS p__overallrating, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Nov 05 23:24:43 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_actions.php"
+Nov 05 23:24:43 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_footer.php"
+Nov 05 23:24:43 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:24:43 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:24:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:24:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Configuration 1.43 ms (11)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Factories 23.33 ms (1)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Action "category/new" 23.20 ms (1)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} View "Success" for "category/new" 33.49 ms (1)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 0.54 ms (1)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 0.45 ms (1)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Partial "category/_form_header" 0.41 ms (1)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Partial "category/_form" 22.11 ms (1)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Partial "category/_form_fieldset" 18.00 ms (1)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Partial "category/_form_field" 16.21 ms (3)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Partial "category/_form_actions" 0.81 ms (1)
+Nov 05 23:24:43 symfony [info] {sfWebDebugLogger} Partial "category/_form_footer" 0.39 ms (1)
+Nov 05 23:24:43 symfony [info] {sfWebResponse} Send content (62598 o)
+Nov 05 23:24:43 symfony [info] {myUser} Remove old flash messages ("notice")
+Nov 05 23:24:56 symfony [info] {sfPatternRouting} Match route "category_create" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'create',  'sf_format' => 'html',)
+Nov 05 23:24:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:24:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:24:56 symfony [info] {categoryActions} Call "categoryActions->executeCreate()"
+Nov 05 23:24:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:24:56 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO category (level, description) VALUES (?, ?) - (0, 包包)
+Nov 05 23:24:56 symfony [info] {sfFrontWebController} Redirect to "http://zixuanpc.stanford.edu/backend_dev.php/category/new"
+Nov 05 23:24:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 05 23:24:56 symfony [info] {sfWebResponse} Send header "Location: http://zixuanpc.stanford.edu/backend_dev.php/category/new"
+Nov 05 23:24:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Configuration 1.31 ms (10)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Factories 22.58 ms (1)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Action "category/create" 46.53 ms (1)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Nov 05 23:24:56 symfony [info] {sfWebResponse} Send content (128 o)
+Nov 05 23:24:56 symfony [info] {sfPatternRouting} Match route "category_new" (/category/new.:sf_format) for /category/new with parameters array (  'module' => 'category',  'action' => 'new',  'sf_format' => 'html',)
+Nov 05 23:24:56 symfony [info] {myUser} Flag old flash messages ("notice")
+Nov 05 23:24:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:24:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:24:56 symfony [info] {categoryActions} Call "categoryActions->executeNew()"
+Nov 05 23:24:56 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/newSuccess.php"
+Nov 05 23:24:56 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Nov 05 23:24:56 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Nov 05 23:24:56 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_header.php"
+Nov 05 23:24:56 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form.php"
+Nov 05 23:24:56 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_fieldset.php"
+Nov 05 23:24:56 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:24:56 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:24:56 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:24:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:24:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.brand_id AS p__brand_id, p.color_id AS p__color_id, p.size AS p__size, p.barcode AS p__barcode, p.qrcode AS p__qrcode, p.description AS p__description, p.overallrating AS p__overallrating, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Nov 05 23:24:56 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_actions.php"
+Nov 05 23:24:56 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_footer.php"
+Nov 05 23:24:56 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:24:56 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:24:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:24:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Configuration 1.54 ms (11)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Factories 24.48 ms (1)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Action "category/new" 26.85 ms (1)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} View "Success" for "category/new" 34.69 ms (1)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 0.45 ms (1)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 0.43 ms (1)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Partial "category/_form_header" 0.40 ms (1)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Partial "category/_form" 23.36 ms (1)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Partial "category/_form_fieldset" 19.28 ms (1)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Partial "category/_form_field" 17.21 ms (3)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Partial "category/_form_actions" 0.82 ms (1)
+Nov 05 23:24:56 symfony [info] {sfWebDebugLogger} Partial "category/_form_footer" 0.39 ms (1)
+Nov 05 23:24:56 symfony [info] {sfWebResponse} Send content (62598 o)
+Nov 05 23:24:56 symfony [info] {myUser} Remove old flash messages ("notice")
+Nov 05 23:25:07 symfony [info] {sfPatternRouting} Match route "category_create" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'create',  'sf_format' => 'html',)
+Nov 05 23:25:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:25:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:25:07 symfony [info] {categoryActions} Call "categoryActions->executeCreate()"
+Nov 05 23:25:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:25:07 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO category (level, description) VALUES (?, ?) - (0, 化妆品)
+Nov 05 23:25:07 symfony [info] {sfFrontWebController} Redirect to "http://zixuanpc.stanford.edu/backend_dev.php/category/new"
+Nov 05 23:25:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 05 23:25:07 symfony [info] {sfWebResponse} Send header "Location: http://zixuanpc.stanford.edu/backend_dev.php/category/new"
+Nov 05 23:25:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (10)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Factories 22.74 ms (1)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Action "category/create" 40.42 ms (1)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Nov 05 23:25:07 symfony [info] {sfWebResponse} Send content (128 o)
+Nov 05 23:25:07 symfony [info] {sfPatternRouting} Match route "category_new" (/category/new.:sf_format) for /category/new with parameters array (  'module' => 'category',  'action' => 'new',  'sf_format' => 'html',)
+Nov 05 23:25:07 symfony [info] {myUser} Flag old flash messages ("notice")
+Nov 05 23:25:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:25:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:25:07 symfony [info] {categoryActions} Call "categoryActions->executeNew()"
+Nov 05 23:25:07 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/newSuccess.php"
+Nov 05 23:25:07 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Nov 05 23:25:07 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Nov 05 23:25:07 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_header.php"
+Nov 05 23:25:07 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form.php"
+Nov 05 23:25:07 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_fieldset.php"
+Nov 05 23:25:07 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:25:07 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:25:07 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_field.php"
+Nov 05 23:25:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:25:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.brand_id AS p__brand_id, p.color_id AS p__color_id, p.size AS p__size, p.barcode AS p__barcode, p.qrcode AS p__qrcode, p.description AS p__description, p.overallrating AS p__overallrating, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM product p - ()
+Nov 05 23:25:07 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_actions.php"
+Nov 05 23:25:07 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoCategory/templates/_form_footer.php"
+Nov 05 23:25:07 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:25:07 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:25:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:25:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Configuration 1.50 ms (11)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Factories 23.02 ms (1)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Action "category/new" 23.36 ms (1)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} View "Success" for "category/new" 30.83 ms (1)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 0.42 ms (1)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 0.42 ms (1)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Partial "category/_form_header" 0.39 ms (1)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Partial "category/_form" 20.61 ms (1)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Partial "category/_form_fieldset" 16.78 ms (1)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Partial "category/_form_field" 15.01 ms (3)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Partial "category/_form_actions" 0.81 ms (1)
+Nov 05 23:25:07 symfony [info] {sfWebDebugLogger} Partial "category/_form_footer" 0.39 ms (1)
+Nov 05 23:25:07 symfony [info] {sfWebResponse} Send content (62598 o)
+Nov 05 23:25:07 symfony [info] {myUser} Remove old flash messages ("notice")
+Nov 05 23:27:29 symfony [info] {sfPatternRouting} Match route "brand" (/brand.:sf_format) for /brand with parameters array (  'module' => 'brand',  'action' => 'index',  'sf_format' => 'html',)
+Nov 05 23:27:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:27:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:27:29 symfony [info] {brandActions} Call "brandActions->executeIndex()"
+Nov 05 23:27:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:27:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM brand b - ()
+Nov 05 23:27:29 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/indexSuccess.php"
+Nov 05 23:27:29 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_assets.php"
+Nov 05 23:27:29 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_flashes.php"
+Nov 05 23:27:29 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_list_header.php"
+Nov 05 23:27:29 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_filters.php"
+Nov 05 23:27:29 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_filters_field.php"
+Nov 05 23:27:29 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_filters_field.php"
+Nov 05 23:27:29 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_list.php"
+Nov 05 23:27:29 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_list_batch_actions.php"
+Nov 05 23:27:29 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_list_actions.php"
+Nov 05 23:27:29 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_list_footer.php"
+Nov 05 23:27:29 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:27:29 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:27:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:27:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} Configuration 76.29 ms (12)
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} Factories 60.88 ms (1)
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} Action "brand/index" 17.02 ms (1)
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} View "Success" for "brand/index" 21.17 ms (1)
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} Partial "brand/_assets" 0.52 ms (1)
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} Partial "brand/_flashes" 0.39 ms (1)
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} Partial "brand/_list_header" 0.34 ms (1)
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} Partial "brand/_filters" 5.65 ms (1)
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} Partial "brand/_filters_field" 2.34 ms (2)
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} Partial "brand/_list" 0.55 ms (1)
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} Partial "brand/_list_batch_actions" 0.73 ms (1)
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} Partial "brand/_list_actions" 0.56 ms (1)
+Nov 05 23:27:29 symfony [info] {sfWebDebugLogger} Partial "brand/_list_footer" 0.35 ms (1)
+Nov 05 23:27:29 symfony [info] {sfWebResponse} Send content (51626 o)
+Nov 05 23:27:55 symfony [info] {sfPatternRouting} Match route "brand_new" (/brand/new.:sf_format) for /brand/new with parameters array (  'module' => 'brand',  'action' => 'new',  'sf_format' => 'html',)
+Nov 05 23:27:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:27:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:27:55 symfony [info] {brandActions} Call "brandActions->executeNew()"
+Nov 05 23:27:55 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/newSuccess.php"
+Nov 05 23:27:55 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_assets.php"
+Nov 05 23:27:55 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_flashes.php"
+Nov 05 23:27:55 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_header.php"
+Nov 05 23:27:55 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form.php"
+Nov 05 23:27:55 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_fieldset.php"
+Nov 05 23:27:55 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_field.php"
+Nov 05 23:27:55 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_field.php"
+Nov 05 23:27:55 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_actions.php"
+Nov 05 23:27:55 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_footer.php"
+Nov 05 23:27:55 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:27:55 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:27:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:27:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:27:55 symfony [info] {sfWebDebugLogger} Configuration 1.47 ms (11)
+Nov 05 23:27:55 symfony [info] {sfWebDebugLogger} Factories 22.96 ms (1)
+Nov 05 23:27:55 symfony [info] {sfWebDebugLogger} Action "brand/new" 17.30 ms (1)
+Nov 05 23:27:55 symfony [info] {sfWebDebugLogger} View "Success" for "brand/new" 17.71 ms (1)
+Nov 05 23:27:55 symfony [info] {sfWebDebugLogger} Partial "brand/_assets" 0.43 ms (1)
+Nov 05 23:27:55 symfony [info] {sfWebDebugLogger} Partial "brand/_flashes" 0.41 ms (1)
+Nov 05 23:27:55 symfony [info] {sfWebDebugLogger} Partial "brand/_form_header" 0.40 ms (1)
+Nov 05 23:27:55 symfony [info] {sfWebDebugLogger} Partial "brand/_form" 6.90 ms (1)
+Nov 05 23:27:55 symfony [info] {sfWebDebugLogger} Partial "brand/_form_fieldset" 3.59 ms (1)
+Nov 05 23:27:55 symfony [info] {sfWebDebugLogger} Partial "brand/_form_field" 2.20 ms (2)
+Nov 05 23:27:55 symfony [info] {sfWebDebugLogger} Partial "brand/_form_actions" 0.67 ms (1)
+Nov 05 23:27:55 symfony [info] {sfWebDebugLogger} Partial "brand/_form_footer" 0.41 ms (1)
+Nov 05 23:27:55 symfony [info] {sfWebResponse} Send content (52705 o)
+Nov 05 23:28:08 symfony [info] {sfPatternRouting} Match route "brand_create" (/brand.:sf_format) for /brand with parameters array (  'module' => 'brand',  'action' => 'create',  'sf_format' => 'html',)
+Nov 05 23:28:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:28:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:28:08 symfony [info] {brandActions} Call "brandActions->executeCreate()"
+Nov 05 23:28:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:28:08 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO brand (country, description) VALUES (?, ?) - (美国, Calvin Klein)
+Nov 05 23:28:08 symfony [info] {sfFrontWebController} Redirect to "http://zixuanpc.stanford.edu/backend_dev.php/brand/new"
+Nov 05 23:28:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 05 23:28:08 symfony [info] {sfWebResponse} Send header "Location: http://zixuanpc.stanford.edu/backend_dev.php/brand/new"
+Nov 05 23:28:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Configuration 1.34 ms (10)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Factories 27.22 ms (1)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Action "brand/create" 40.50 ms (1)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Nov 05 23:28:08 symfony [info] {sfWebResponse} Send content (125 o)
+Nov 05 23:28:08 symfony [info] {sfPatternRouting} Match route "brand_new" (/brand/new.:sf_format) for /brand/new with parameters array (  'module' => 'brand',  'action' => 'new',  'sf_format' => 'html',)
+Nov 05 23:28:08 symfony [info] {myUser} Flag old flash messages ("notice")
+Nov 05 23:28:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:28:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:28:08 symfony [info] {brandActions} Call "brandActions->executeNew()"
+Nov 05 23:28:08 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/newSuccess.php"
+Nov 05 23:28:08 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_assets.php"
+Nov 05 23:28:08 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_flashes.php"
+Nov 05 23:28:08 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_header.php"
+Nov 05 23:28:08 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form.php"
+Nov 05 23:28:08 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_fieldset.php"
+Nov 05 23:28:08 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_field.php"
+Nov 05 23:28:08 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_field.php"
+Nov 05 23:28:08 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_actions.php"
+Nov 05 23:28:08 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_footer.php"
+Nov 05 23:28:08 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:28:08 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:28:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:28:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Configuration 1.41 ms (11)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Factories 26.98 ms (1)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Action "brand/new" 17.07 ms (1)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} View "Success" for "brand/new" 18.12 ms (1)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Partial "brand/_assets" 0.53 ms (1)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Partial "brand/_flashes" 0.43 ms (1)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Partial "brand/_form_header" 0.41 ms (1)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Partial "brand/_form" 6.92 ms (1)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Partial "brand/_form_fieldset" 3.58 ms (1)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Partial "brand/_form_field" 2.20 ms (2)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Partial "brand/_form_actions" 0.67 ms (1)
+Nov 05 23:28:08 symfony [info] {sfWebDebugLogger} Partial "brand/_form_footer" 0.46 ms (1)
+Nov 05 23:28:08 symfony [info] {sfWebResponse} Send content (53460 o)
+Nov 05 23:28:08 symfony [info] {myUser} Remove old flash messages ("notice")
+Nov 05 23:28:31 symfony [info] {sfPatternRouting} Match route "brand_create" (/brand.:sf_format) for /brand with parameters array (  'module' => 'brand',  'action' => 'create',  'sf_format' => 'html',)
+Nov 05 23:28:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:28:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:28:31 symfony [info] {brandActions} Call "brandActions->executeCreate()"
+Nov 05 23:28:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:28:31 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO brand (country, description) VALUES (?, ?) - (美国, GAP)
+Nov 05 23:28:31 symfony [info] {sfFrontWebController} Redirect to "http://zixuanpc.stanford.edu/backend_dev.php/brand/new"
+Nov 05 23:28:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 05 23:28:31 symfony [info] {sfWebResponse} Send header "Location: http://zixuanpc.stanford.edu/backend_dev.php/brand/new"
+Nov 05 23:28:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Configuration 1.34 ms (10)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Factories 27.50 ms (1)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Action "brand/create" 41.64 ms (1)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Nov 05 23:28:31 symfony [info] {sfWebResponse} Send content (125 o)
+Nov 05 23:28:31 symfony [info] {sfPatternRouting} Match route "brand_new" (/brand/new.:sf_format) for /brand/new with parameters array (  'module' => 'brand',  'action' => 'new',  'sf_format' => 'html',)
+Nov 05 23:28:31 symfony [info] {myUser} Flag old flash messages ("notice")
+Nov 05 23:28:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:28:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:28:31 symfony [info] {brandActions} Call "brandActions->executeNew()"
+Nov 05 23:28:31 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/newSuccess.php"
+Nov 05 23:28:31 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_assets.php"
+Nov 05 23:28:31 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_flashes.php"
+Nov 05 23:28:31 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_header.php"
+Nov 05 23:28:31 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form.php"
+Nov 05 23:28:31 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_fieldset.php"
+Nov 05 23:28:31 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_field.php"
+Nov 05 23:28:31 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_field.php"
+Nov 05 23:28:31 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_actions.php"
+Nov 05 23:28:31 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_footer.php"
+Nov 05 23:28:31 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:28:31 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:28:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:28:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Configuration 1.47 ms (11)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Factories 23.72 ms (1)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Action "brand/new" 15.00 ms (1)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} View "Success" for "brand/new" 19.67 ms (1)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Partial "brand/_assets" 0.55 ms (1)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Partial "brand/_flashes" 0.56 ms (1)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Partial "brand/_form_header" 0.54 ms (1)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Partial "brand/_form" 7.53 ms (1)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Partial "brand/_form_fieldset" 3.81 ms (1)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Partial "brand/_form_field" 2.30 ms (2)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Partial "brand/_form_actions" 0.71 ms (1)
+Nov 05 23:28:31 symfony [info] {sfWebDebugLogger} Partial "brand/_form_footer" 0.41 ms (1)
+Nov 05 23:28:31 symfony [info] {sfWebResponse} Send content (53459 o)
+Nov 05 23:28:31 symfony [info] {myUser} Remove old flash messages ("notice")
+Nov 05 23:28:39 symfony [info] {sfPatternRouting} Match route "brand_create" (/brand.:sf_format) for /brand with parameters array (  'module' => 'brand',  'action' => 'create',  'sf_format' => 'html',)
+Nov 05 23:28:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:28:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:28:39 symfony [info] {brandActions} Call "brandActions->executeCreate()"
+Nov 05 23:28:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:28:39 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO brand (country, description) VALUES (?, ?) - (美国, Coach)
+Nov 05 23:28:39 symfony [info] {sfFrontWebController} Redirect to "http://zixuanpc.stanford.edu/backend_dev.php/brand/new"
+Nov 05 23:28:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 05 23:28:39 symfony [info] {sfWebResponse} Send header "Location: http://zixuanpc.stanford.edu/backend_dev.php/brand/new"
+Nov 05 23:28:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Configuration 1.22 ms (10)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Factories 23.02 ms (1)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Action "brand/create" 36.68 ms (1)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Nov 05 23:28:39 symfony [info] {sfWebResponse} Send content (125 o)
+Nov 05 23:28:39 symfony [info] {sfPatternRouting} Match route "brand_new" (/brand/new.:sf_format) for /brand/new with parameters array (  'module' => 'brand',  'action' => 'new',  'sf_format' => 'html',)
+Nov 05 23:28:39 symfony [info] {myUser} Flag old flash messages ("notice")
+Nov 05 23:28:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:28:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:28:39 symfony [info] {brandActions} Call "brandActions->executeNew()"
+Nov 05 23:28:39 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/newSuccess.php"
+Nov 05 23:28:39 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_assets.php"
+Nov 05 23:28:39 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_flashes.php"
+Nov 05 23:28:39 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_header.php"
+Nov 05 23:28:39 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form.php"
+Nov 05 23:28:39 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_fieldset.php"
+Nov 05 23:28:39 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_field.php"
+Nov 05 23:28:39 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_field.php"
+Nov 05 23:28:39 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_actions.php"
+Nov 05 23:28:39 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_footer.php"
+Nov 05 23:28:39 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:28:39 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:28:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:28:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Configuration 1.44 ms (11)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Factories 22.90 ms (1)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Action "brand/new" 15.11 ms (1)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} View "Success" for "brand/new" 18.54 ms (1)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Partial "brand/_assets" 0.60 ms (1)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Partial "brand/_flashes" 0.56 ms (1)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Partial "brand/_form_header" 0.65 ms (1)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Partial "brand/_form" 6.94 ms (1)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Partial "brand/_form_fieldset" 3.41 ms (1)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Partial "brand/_form_field" 2.04 ms (2)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Partial "brand/_form_actions" 0.71 ms (1)
+Nov 05 23:28:39 symfony [info] {sfWebDebugLogger} Partial "brand/_form_footer" 0.38 ms (1)
+Nov 05 23:28:39 symfony [info] {sfWebResponse} Send content (53459 o)
+Nov 05 23:28:39 symfony [info] {myUser} Remove old flash messages ("notice")
+Nov 05 23:28:48 symfony [info] {sfPatternRouting} Match route "brand_create" (/brand.:sf_format) for /brand with parameters array (  'module' => 'brand',  'action' => 'create',  'sf_format' => 'html',)
+Nov 05 23:28:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:28:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:28:48 symfony [info] {brandActions} Call "brandActions->executeCreate()"
+Nov 05 23:28:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:28:48 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO brand (country, description) VALUES (?, ?) - (中国, 真维斯)
+Nov 05 23:28:48 symfony [info] {sfFrontWebController} Redirect to "http://zixuanpc.stanford.edu/backend_dev.php/brand/new"
+Nov 05 23:28:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 05 23:28:48 symfony [info] {sfWebResponse} Send header "Location: http://zixuanpc.stanford.edu/backend_dev.php/brand/new"
+Nov 05 23:28:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (10)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Factories 23.86 ms (1)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Action "brand/create" 34.11 ms (1)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Nov 05 23:28:48 symfony [info] {sfWebResponse} Send content (125 o)
+Nov 05 23:28:48 symfony [info] {sfPatternRouting} Match route "brand_new" (/brand/new.:sf_format) for /brand/new with parameters array (  'module' => 'brand',  'action' => 'new',  'sf_format' => 'html',)
+Nov 05 23:28:48 symfony [info] {myUser} Flag old flash messages ("notice")
+Nov 05 23:28:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:28:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:28:48 symfony [info] {brandActions} Call "brandActions->executeNew()"
+Nov 05 23:28:48 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/newSuccess.php"
+Nov 05 23:28:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_assets.php"
+Nov 05 23:28:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_flashes.php"
+Nov 05 23:28:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_header.php"
+Nov 05 23:28:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form.php"
+Nov 05 23:28:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_fieldset.php"
+Nov 05 23:28:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_field.php"
+Nov 05 23:28:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_field.php"
+Nov 05 23:28:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_actions.php"
+Nov 05 23:28:48 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_footer.php"
+Nov 05 23:28:48 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:28:48 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:28:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:28:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Configuration 1.46 ms (11)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Factories 23.45 ms (1)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Action "brand/new" 15.14 ms (1)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} View "Success" for "brand/new" 16.98 ms (1)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Partial "brand/_assets" 0.43 ms (1)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Partial "brand/_flashes" 0.43 ms (1)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Partial "brand/_form_header" 0.39 ms (1)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Partial "brand/_form" 6.76 ms (1)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Partial "brand/_form_fieldset" 3.53 ms (1)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Partial "brand/_form_field" 2.10 ms (2)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Partial "brand/_form_actions" 0.71 ms (1)
+Nov 05 23:28:48 symfony [info] {sfWebDebugLogger} Partial "brand/_form_footer" 0.39 ms (1)
+Nov 05 23:28:48 symfony [info] {sfWebResponse} Send content (53459 o)
+Nov 05 23:28:48 symfony [info] {myUser} Remove old flash messages ("notice")
+Nov 05 23:29:00 symfony [info] {sfPatternRouting} Match route "brand_create" (/brand.:sf_format) for /brand with parameters array (  'module' => 'brand',  'action' => 'create',  'sf_format' => 'html',)
+Nov 05 23:29:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:29:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:29:00 symfony [info] {brandActions} Call "brandActions->executeCreate()"
+Nov 05 23:29:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:29:00 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO brand (country, description) VALUES (?, ?) - (法国, LV)
+Nov 05 23:29:00 symfony [info] {sfFrontWebController} Redirect to "http://zixuanpc.stanford.edu/backend_dev.php/brand/5/edit"
+Nov 05 23:29:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 05 23:29:00 symfony [info] {sfWebResponse} Send header "Location: http://zixuanpc.stanford.edu/backend_dev.php/brand/5/edit"
+Nov 05 23:29:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Configuration 1.36 ms (10)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Factories 23.13 ms (1)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Action "brand/create" 29.84 ms (1)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Nov 05 23:29:00 symfony [info] {sfWebResponse} Send content (128 o)
+Nov 05 23:29:00 symfony [info] {sfPatternRouting} Match route "brand_edit" (/brand/:id/edit.:sf_format) for /brand/5/edit with parameters array (  'module' => 'brand',  'action' => 'edit',  'sf_format' => 'html',  'id' => '5',)
+Nov 05 23:29:00 symfony [info] {myUser} Flag old flash messages ("notice")
+Nov 05 23:29:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 05 23:29:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 05 23:29:00 symfony [info] {brandActions} Call "brandActions->executeEdit()"
+Nov 05 23:29:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Nov 05 23:29:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT b.id AS b__id, b.country AS b__country, b.description AS b__description FROM brand b WHERE (b.id = ?) - (5)
+Nov 05 23:29:00 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/editSuccess.php"
+Nov 05 23:29:00 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_assets.php"
+Nov 05 23:29:00 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_flashes.php"
+Nov 05 23:29:00 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_header.php"
+Nov 05 23:29:00 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form.php"
+Nov 05 23:29:00 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_fieldset.php"
+Nov 05 23:29:00 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_field.php"
+Nov 05 23:29:00 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_field.php"
+Nov 05 23:29:00 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_actions.php"
+Nov 05 23:29:00 symfony [info] {sfPartialView} Render "/home/zxwang/sfproject/wepost/cache/backend/dev/modules/autoBrand/templates/_form_footer.php"
+Nov 05 23:29:00 symfony [info] {sfPHPView} Decorate content with "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:29:00 symfony [info] {sfPHPView} Render "/home/zxwang/sfproject/wepost/apps/backend/templates/layout.php"
+Nov 05 23:29:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 05 23:29:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Configuration 1.44 ms (11)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Factories 22.98 ms (1)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Action "brand/edit" 31.78 ms (1)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} View "Success" for "brand/edit" 17.86 ms (1)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Partial "brand/_assets" 0.50 ms (1)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Partial "brand/_flashes" 0.43 ms (1)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Partial "brand/_form_header" 0.41 ms (1)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Partial "brand/_form" 7.40 ms (1)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Partial "brand/_form_fieldset" 3.47 ms (1)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Partial "brand/_form_field" 2.17 ms (2)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Partial "brand/_form_actions" 1.38 ms (1)
+Nov 05 23:29:00 symfony [info] {sfWebDebugLogger} Partial "brand/_form_footer" 0.44 ms (1)
+Nov 05 23:29:00 symfony [info] {sfWebResponse} Send content (56900 o)
+Nov 05 23:29:00 symfony [info] {myUser} Remove old flash messages ("notice")

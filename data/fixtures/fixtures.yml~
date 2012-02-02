@@ -1,0 +1,499 @@
+# # Populate this file with data to be loaded by your ORM's *:data-load task.
+# # You can create multiple files in this directory (i.e. 010_users.yml,
+# # 020_articles.yml, etc) which will be loaded in alphabetical order.
+# # 
+# # See documentation for your ORM's *:data-load task for more information.
+# 
+# User:
+#   fabien:
+#     username: fabien
+#     password: changeme
+#     name:     Fabien Potencier
+#     email:    fabien.potencier@symfony-project.com
+#   kris:
+#     username: Kris.Wallsmith
+#     password: changeme
+#     name:     Kris Wallsmith
+#     email:    kris.wallsmith@symfony-project.com
+Brand:
+  b_Levis:
+    country: 美国
+    description: Levis
+  b_Calvin Klein:
+    country: 美国
+    description: Calvin Klein
+  b_Gucci:
+    country: 意大利
+    description: Gucci
+  b_youngor:
+    country: 中国
+    description: 雅戈尔
+  b_Louis Vuitton:
+    country: 法国
+    description: Louis Vuitton
+  b_Nike:
+    country: 美国
+    description: Nike
+  b_Reebok:
+    country: 英国
+    description: Reebok
+  b_Kappa:
+    country: 意大利
+    description: Kappa
+  b_Lee:
+    country: 美国
+    description: Lee
+  b_wrangler:
+    country: 美国
+    description: Wrangler
+  b_senma:
+    country: 中国
+    description: 森马
+  b_shanshan:
+    country: 中国
+    description: 杉杉
+  b_nanjiren:
+    country: 中国
+    description: 南极人
+  b_jinba:
+    country: 中国
+    description: 劲霸
+  b_qibilang:
+    country: 中国
+    description: 七匹狼
+  b_caizi:
+    country: 中国
+    description: 才子
+  b_geliya:
+    country: 中国
+    description: 歌莉娅
+  b_adidas:
+    country: 美国
+    description: Adidas
+  b_zuodannu:
+    country: 中国
+    description: 佐丹奴
+  b_lining:
+    country: 中国
+    description: 李宁
+  b_only:
+    country: 丹麦
+    description: Only
+  b_taipingniao:
+    country: 中国
+    description: 太平鸟
+  
+    
+Category:
+  c_women:
+    level: 0
+    description: 女装
+  c_men:
+    level: 0
+    description: 男装
+  c_bag:
+    level: 0
+    description: 包包
+  c_child:
+    level: 0
+    description: 童装
+  c_women_shoe:
+    level: 0
+    description: 女鞋
+  c_men_shoe:
+    level: 0
+    description: 男鞋
+  c_men_tshirt:
+    level: 1
+    description: T恤
+  c_men_cs:
+    level: 1
+    description: 衬衫
+  c_men_xf:
+    level: 1
+    description: 西服
+  c_men_jk:
+    level: 1
+    description: 夹克
+  c_men_zzs:
+    level: 1
+    description: 针织衫
+  c_men_mj:
+    level: 1
+    description: 马甲
+  c_men_fy:
+    level: 1
+    description: 风衣
+  c_men_yrf:
+    level: 1
+    description: 羽绒服
+  c_men_py:
+    level: 1
+    description: 皮衣
+  c_men_my:
+    level: 1
+    description: 毛衣
+  c_men_qtsz:
+    level: 1
+    description: 其他上装
+  c_men_nzk:
+    level: 1
+    description: 牛仔裤
+  c_men_xxk:
+    level: 1
+    description: 休闲裤
+  c_men_qtnk:
+    level: 1
+    description: 其他男裤
+  c_women_mj:
+    level: 1
+    description: 马甲
+  c_women_xz:
+    level: 1
+    description: 西装
+  c_women_zzs:
+    level: 1
+    description: 针织衫
+  c_women_my:
+    level: 1
+    description: 毛衣
+  c_women_fy:
+    level: 1
+    description: 风衣
+  c_women_pc:
+    level: 1
+    description: 皮草
+  c_women_mianyi:
+    level: 1
+    description: 棉衣
+  c_women_yrf:
+    level: 1
+    description: 羽绒服
+  c_women_bx:
+    level: 1
+    description: 背心
+  c_women_dds:
+    level: 1
+    description: 吊带衫
+  c_women_tshirt:
+    level: 1
+    description: T恤
+  c_women_cs:
+    level: 1
+    description: 衬衫
+  c_women_jk:
+    level: 1
+    description: 夹克
+  c_women_wy:
+    level: 1
+    description: 卫衣
+  c_women_qtsz:
+    level: 1
+    description: 其他上装 
+  c_women_lyq:
+    level: 1
+    description: 连衣裙
+  c_women_zq:
+    level: 1
+    description: 中裙
+  c_women_qp:
+    level: 1
+    description: 旗袍
+  c_women_hs:
+    level: 1
+    description: 婚纱
+  c_women_lf:
+    level: 1
+    description: 礼服
+  c_women_dq:
+    level: 1
+    description: 短裙
+  c_women_xxq:
+    level: 1
+    description: 休闲裤
+  c_women_nzk:
+    level: 1
+    description: 牛仔裤       
+  c_women_qtnk:
+    level: 1
+    description: 其他女裤   
+  c_bag_stb:
+    level: 1
+    description: 手提包
+  c_bag_snb:
+    level: 1
+    description: 手拿包    
+  c_bag_djb:
+    level: 1
+    description: 单肩包    
+  c_bag_kb:
+    level: 1
+    description: 挎包    
+  c_bag_bb:
+    level: 1
+    description: 背包
+  c_bag_yb:
+    level: 1
+    description: 腰包   
+  c_women_shoe_xz:
+    level: 1
+    description: 靴子
+  c_women_shoe_tx:
+    level: 1
+    description: 拖鞋    
+  c_women_shoe_zzx:
+    level: 1
+    description: 正装鞋  
+  c_women_shoe_dbx:
+    level: 1
+    description: 低帮鞋    
+  c_women_shoe_lx:
+    level: 1
+    description: 凉鞋
+  c_women_shoe_fbx:
+    level: 1
+    description: 帆布鞋       
+  c_women_shoe_gbx:
+    level: 1
+    description: 高帮鞋 
+  c_women_shoe_ydx:
+    level: 1
+    description: 运动鞋
+  c_men_shoe_px:
+    level: 1
+    description: 皮鞋
+  c_men_shoe_xxx:
+    level: 1
+    description: 休闲鞋    
+  c_men_shoe_xxpx:
+    level: 1
+    description: 休闲皮鞋    
+  c_men_shoe_bx:
+    level: 1
+    description: 板鞋    
+  c_men_shoe_zzx:
+    level: 1
+    description: 正装鞋
+  c_men_shoe_tx:
+    level: 1
+    description: 拖鞋       
+  c_men_shoe_ydx:
+    level: 1
+    description: 运动鞋 
+    
+CategoryTree:
+  ct_men_tshirt:
+    Category: c_men
+    Subcategory: c_men_tshirt
+  ct_men_cs:
+    Category: c_men
+    Subcategory: c_men_cs
+  ct_men_xf:
+    Category: c_men
+    Subcategory: c_men_xf
+  ct_men_jk:
+    Category: c_men
+    Subcategory: c_men_jk
+  ct_men_zzs:
+    Category: c_men
+    Subcategory: c_men_zzs
+  ct_men_mj:
+    Category: c_men
+    Subcategory: c_men_mj
+  ct_men_fy:
+    Category: c_men
+    Subcategory: c_men_fy
+  ct_men_yrf:
+    Category: c_men
+    Subcategory: c_men_yrf
+  ct_men_py:
+    Category: c_men
+    Subcategory: c_men_py
+  ct_men_my:
+    Category: c_men
+    Subcategory: c_men_my
+  ct_men_qtsz:
+    Category: c_men
+    Subcategory: c_men_qtsz
+  ct_men_nzk:
+    Category: c_men
+    Subcategory: c_men_nzk
+  ct_men_xxk:
+    Category: c_men
+    Subcategory: c_men_xxk
+  ct_men_qtnk:
+    Category: c_men
+    Subcategory: c_men_qtnk
+  ct_women_mj:
+    Category: c_women
+    Subcategory: c_women_mj
+  ct_women_xz:
+    Category: c_women
+    Subcategory: c_women_xz
+  ct_women_zzs:
+    Category: c_women
+    Subcategory: c_women_zzs
+  ct_women_my:
+    Category: c_women
+    Subcategory: c_women_my
+  ct_women_fy:
+    Category: c_women
+    Subcategory: c_women_fy
+  ct_women_pc:
+    Category: c_women
+    Subcategory: c_women_pc
+  ct_women_mianyi:
+    Category: c_women
+    Subcategory: c_women_mianyi
+  ct_women_yrf:
+    Category: c_women
+    Subcategory: c_women_yrf
+  ct_women_bx:
+    Category: c_women
+    Subcategory: c_women_bx
+  ct_women_dds:
+    Category: c_women
+    Subcategory: c_women_dds
+  ct_women_tshirt:
+    Category: c_women
+    Subcategory: c_women_tshirt
+  ct_women_cs:
+    Category: c_women
+    Subcategory: c_women_cs
+  ct_women_jk:
+    Category: c_women
+    Subcategory: c_women_jk
+  ct_women_wy:
+    Category: c_women
+    Subcategory: c_women_wy
+  ct_women_qtsz:
+    Category: c_women
+    Subcategory: c_women_qtsz 
+  ct_women_lyq:
+    Category: c_women
+    Subcategory: c_women_lyq
+  ct_women_zq:
+    Category: c_women
+    Subcategory: c_women_zq
+  ct_women_qp:
+    Category: c_women
+    Subcategory: c_women_qp
+  ct_women_hs:
+    Category: c_women
+    Subcategory: c_women_hs
+  ct_women_lf:
+    Category: c_women
+    Subcategory: c_women_lf
+  ct_women_dq:
+    Category: c_women
+    Subcategory: c_women_dq
+  ct_women_xxq:
+    Category: c_women
+    Subcategory: c_women_xxq
+  ct_women_nzk:
+    Category: c_women
+    Subcategory: c_women_nzk    
+  ct_women_qtnk:
+    Category: c_women
+    Subcategory: c_women_qtnk  
+  ct_bag_stb:
+    Category: c_bag
+    Subcategory: c_bag_stb
+  ct_bag_snb:
+    Category: c_bag
+    Subcategory: c_bag_snb   
+  ct_bag_djb:
+    Category: c_bag
+    Subcategory: c_bag_djb    
+  ct_bag_kb:
+    Category: c_bag
+    Subcategory: c_bag_kb    
+  ct_bag_bb:
+    Category: c_bag
+    Subcategory: c_bag_bb
+  ct_bag_yb:
+    Category: c_bag
+    Subcategory: c_bag_yb       
+  ct_women_shoe_xz:
+    Category: c_women_shoe
+    Subcategory: c_women_shoe_xz
+  ct_women_shoe_tx:
+    Category: c_women_shoe
+    Subcategory: c_women_shoe_tx    
+  ct_women_shoe_zzx:
+    Category: c_women_shoe
+    Subcategory:  c_women_shoe_zzx    
+  ct_women_shoe_dbx:
+    Category: c_women_shoe
+    Subcategory: c_women_shoe_dbx    
+  ct_women_shoe_lx:
+    Category: c_women_shoe
+    Subcategory: c_women_shoe_lx
+  ct_women_shoe_fbx:
+    Category: c_women_shoe
+    Subcategory: c_women_shoe_fbx       
+  ct_women_shoe_gbx:
+    Category: c_women_shoe
+    Subcategory: c_women_shoe_gbx       
+  ct_women_shoe_ydx:
+    Category: c_women_shoe
+    Subcategory: c_women_shoe_ydx
+  ct_men_shoe_px:
+    Category: c_men_shoe
+    Subcategory: c_men_shoe_px
+  ct_men_shoe_xxx:
+    Category: c_men_shoe
+    Subcategory: c_men_shoe_xxx    
+  ct_men_shoe_xxpx:
+    Category: c_men_shoe
+    Subcategory: c_men_shoe_xxpx    
+  ct_men_shoe_bx:
+    Category: c_men_shoe
+    Subcategory: c_men_shoe_bx   
+  ct_men_shoe_zzx:
+    Category: c_men_shoe
+    Subcategory: c_men_shoe_zzx
+  ct_men_shoe_tx:
+    Category: c_men_shoe
+    Subcategory: c_men_shoe_tx       
+  ct_men_shoe_ydx:
+    Category: c_men_shoe
+    Subcategory: c_men_shoe_ydx      
+
+Color:
+  c_white:
+    colorName: "#ffffff"
+  c_black:
+    colorName: "#000000"
+  c_red:
+    colorName: "#ff0000"
+  c_green:
+    colorName: "#00ff00"
+  c_blue:
+    colorName: "#0000ff"
+  c_purple:
+    colorName: "#ff00ff"
+
+Material:
+  m_cm:
+    materialName: 纯棉
+  m_cmao:
+    materialName: 纯毛
+  m_zs:
+    materialName: 真丝
+  m_np:
+    materialName: 牛皮
+  m_yp:
+    materialName: 羊皮
+  m_yr:
+    materialName: 羊绒
+  m_hf:
+    materialName: 混纺
+  m_hx:
+    materialName: 化纤
+  m_js:
+    materialName: 金属
+  m_fb:
+    materialName: 帆布
+  m_tm:
+    materialName: 兔毛
