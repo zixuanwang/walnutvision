@@ -94,7 +94,7 @@ body {
 					<?php for($j=0;$j<3;++$j):?>
 						<li class="span3">
 							<div class="thumbnail">
-							<p><span class="label label-important" style="font-size:14px;"><?php echo $imageArray[$i*3+$j]['price']?></span></p>
+							<p><span class="label label-important" style="font-size:14px;">￥<?php echo $imageArray[$i*3+$j]['price']?></span></p>
 								<img src="<?php echo $imageArray[$i*3+$j]['image'] ?>"
 									style="height: 180px;">
 								<div class="caption">

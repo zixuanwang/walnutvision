@@ -39,7 +39,7 @@ class walnutActions extends sfActions
 		foreach ($cursor as $obj) {
 			$imageArray[]=$this->mPathPrefix . $obj->getFilename();
 		}
-		$conn->close();                                // Disconnect from Server
+		$conn->close();           
 		$this->pageArray=array();
 		for($i=-3;$i<=3;++$i){
 			$p=$page+$i;
@@ -49,6 +49,7 @@ class walnutActions extends sfActions
 		}
 		$this->count=$db->image->count();
 		$this->imageArray=$this->getImageInfo($imageArray);
+// 		print_r($imageArray);
 	}
 
 	public function executeQuery(sfWebRequest $request)
@@ -57,9 +58,10 @@ class walnutActions extends sfActions
 			$file = $request->getFiles ( 'fileInput' );
 			$imagePath = $this->saveUploadedImage ( $file );
 			$time_start = microtime(true);
-			$this->resultArray=$this->query($imagePath);
+			$imageArray=$this->query($imagePath);
 			$time_end = microtime(true);
 			$this->time = $time_end - $time_start;
+			$this->imageArray=$this->getImageInfo($imageArray);
 		}
 	}
 
@@ -126,16 +128,18 @@ class walnutActions extends sfActions
 				$item['image']=$imagePath;
 				$imageHash=basename($imagePath,'.jpg');
 				$productArray=$client->get('image',$imageHash,'d:ii_0');
-				$productId=$productArray[0]->value;
-				$infoArray=$client->getRowWithColumns('meta', $productId, array('d:u_0','d:t_0','d:lnp_0'));
-				$item['title']=$infoArray[0]->columns['d:t_0']->value;
-				$item['url']=$infoArray[0]->columns['d:u_0']->value;
-				$item['price']=$infoArray[0]->columns['d:lnp_0']->value;
+				if(!empty($productArray)){
+					$productId=$productArray[0]->value;
+					$infoArray=$client->getRowWithColumns('meta', $productId, array('d:u_0','d:t_0','d:lnp_0'));
+					$item['title']=$infoArray[0]->columns['d:t_0']->value;
+					$item['url']=$infoArray[0]->columns['d:u_0']->value;
+					$item['price']=$infoArray[0]->columns['d:lnp_0']->value;
+				}
 				$ret[$i++]=$item;
 			}
 			$transport->close();
 		}catch(TException $e){
-			
+			echo "ThriftException: ".$e->getMessage()."\r\n";
 		}
 		return $ret;
 	}
