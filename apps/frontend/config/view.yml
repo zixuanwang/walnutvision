@@ -33,7 +33,7 @@ colorSuccess:
 materialSuccess:
   has_layout:  false
 indexSuccess:
-  stylesheets:    [bootstrap.css, bootstrap-responsive.css]
+  stylesheets:    [bootstrap.css]
   javascripts:    []
 registerSuccess:
   stylesheets:    [bootstrap.css]
